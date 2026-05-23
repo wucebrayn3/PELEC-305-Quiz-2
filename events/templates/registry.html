@@ -1,0 +1,7 @@
+<h1>Registrations</h1>
+<ul>
+    {% for registration in registrations %}
+        <li>{{ registration.full_name }} - {{ registration.email }} - {{ registration.age }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'register' %}">Register for another event</a>
